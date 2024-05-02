@@ -6,7 +6,7 @@ After=network.target
 [Service]
 Type=simple
 User=root
-ExecStart=sudo screen -dm -S ropongi cd /home/uslu/Instalador-rasp-ucpnuevo/uxmal-rasp-module/dist/ && sudo NODE_ENV=production /home/uslu/.nvm/versions/node/v20.12.2/bin/node dist/index.js
+ExecStart=cd /home/uslu/Instalador-rasp-ucpnuevo/uxmal-rasp-module/ && screen -dm -S ropongi /home/uslu/.nvm/versions/node/v20.12.2/bin/node dist/index.js
 Restart=on-failure
 
 [Install]
