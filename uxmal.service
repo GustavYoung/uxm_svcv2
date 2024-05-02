@@ -1,0 +1,13 @@
+[Unit]
+Description=Uxmal Int service v3 node.js app to listen great music
+Documentation=UxmalStream.mx
+After=network.target 
+
+[Service]
+Type=simple
+User=uslu
+ExecStart=screen -dm -S NODE_ENV=production /usr/local/bin/node /home/uslu/Instalador-rasp-ucpnuevo/uxmal-rasp-module/uxmal-ropo/dist/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
