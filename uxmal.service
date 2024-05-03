@@ -5,7 +5,7 @@ After=network.target
 
 [Service]
 User=root
-ExecStart=bash /home/uslu/uxm_svcv2/mir_launchr.sh
+ExecStart=/home/uslu/uxm_svcv2/mir_launchr
 Restart=on-failure
 
 [Install]
